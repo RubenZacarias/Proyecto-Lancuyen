@@ -1,0 +1,496 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+
+body{
+    background-color: black;
+    margin: 1em;
+   
+    
+   
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    letter-spacing: 25px;
+    word-spacing: 40px ;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+img{
+    max-width: 90%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    transition:0.3s ease-in-out;
+    outline: 2px solid #333;
+    outline-offset: -10px;
+}
+
+img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.portada{
+    width: 100% ;
+    height: 200px;
+    margin: auto;
+    background-image: url(img/Portada.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 30px;
+
+}
+
+.portada a {
+    font-size: 1.5rem;
+    margin: 10px;
+    display: block;
+    margin-left: 1000px;
+    
+
+}
+.redsocial{
+    position: fixed ;
+    right: 0;
+    top: 45%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+}
+
+.redsocial a {
+    color: white;
+    width: 35px;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex; 
+    transition: all .5s;
+    
+}
+
+.redsocial a:hover{
+    cursor: pointer;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgb(0, 0, 0, 0.42);
+
+}
+.face{
+    background-color: #2e406e;
+    border-radius: 1rem 0 0 0 ;
+}
+
+.insta{
+    background-color: #3f60a5;
+}
+
+.youtube{
+    background-color: #e83028;
+    border-radius: 0 0 0 1rem;
+}
+
+.spotify{
+    background-color: black;
+    
+}
+
+#galeria{
+    columns: 6 270px;
+    column-gap: 1em ;
+}
+
+#img-activa{
+    width: 53%;
+    height: 30%;
+}
+
+#contenedor-principal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    margin-left: 280px;
+    
+}
+
+#contenedor-interno{
+    width: 400px;
+    height: 400px;
+    border:  2px burlywood solid ;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 300px;
+    
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #333;
+}
+
+#btn-cierra{
+    position: absolute;
+    top: 13%;
+    right: 48%;
+    font-size: 3rem;
+    cursor: pointer;
+    color: gray;
+
+}
+
+#btn-retrocede{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    font-size: 3rem;
+    color: gray;
+}
+
+#btn-adelanta{
+    position: absolute;
+    top: 40%;
+    right: 48%;
+    font-size: 3rem;
+    color: gray;
+}
+
+footer{
+    width: 100vw;
+    height: auto;
+    color: white;
+    margin-top: auto;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+
+}
+
+.iconos,  p{
+    margin: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.derechos{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center ;
+    font-size: 1rem;
+}
+
+.nombre, .redes{
+    color: #333;
+    font-size: 1.5rem;
+}
+
+h3{
+    color:  white;
+    font-size: 2rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@media (max-width: 500px){
+    h2{
+        font-size: 1.4rem;
+        letter-spacing: 5px;
+        word-spacing: 10px ;
+        margin-right: 10px ;
+    
+    }
+
+    .redsocial a{
+        width:  28px;
+    }
+
+    .portada{
+        width: 100% ;
+        height: 80px;
+        margin: auto;
+        background-image: url(img/Portada.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-bottom: 15px;
+        padding: 5px;
+        margin-left: 10px;
+        
+    
+    }
+
+    #galeria{
+        display: grid;
+        width: 200px;
+        height: 200px;
+        columns: 2 100px;
+        column-gap: 0.5em ;
+        margin-left: 75px;
+        
+}
+
+#contenedor-principal{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    margin-left: 50px;
+    
+}
+
+#contenedor-interno{
+    width: 400px;
+    height: 400px;
+    border:  2px burlywood solid ;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+
+    
+}
+footer{
+    
+    margin-top: 5360px;
+    color: white;
+    margin-left: 0;
+    
+   
+}
+.iconos,  p{
+    margin: 10px;
+    text-align: center;
+   
+    font-size: 0.9rem;
+}
+
+.derechos{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center ;
+    font-size: 0.9rem;
+}
+
+.nombre, .redes{
+    color: #333;
+    font-size: 1rem;
+    
+}
+
+.nombre{
+    margin-bottom: 15px;
+}
+
+.redsocial{
+    position: fixed ;
+    right: 5px;
+    top: 45%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+
+}
+
+#img-activa{
+    width: 60%;
+    height: auto;
+    margin-right: 520px;
+}
+
+#btn-retrocede{
+    position: absolute;
+    top: 40%;
+    left: -20px;
+    font-size: 2rem;
+    color: gray;
+}
+
+#btn-adelanta{
+    position: absolute;
+    top: 40%;
+    right: 41%;
+    font-size: 2rem;
+    color: gray;
+}
+
+#btn-cierra{
+    position: absolute;
+    top: 9%;
+    right: 42%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+
+}
+
+h3{
+    color:  white;
+    font-size: 1rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.redsocial a:hover{
+    cursor: pointer;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgb(0, 0, 0, 0.42);
+
+}
+img:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 700px) and (orientation:landscape) {
+
+    h2{
+        font-size: 1.4rem;
+        letter-spacing: 10px;
+        word-spacing: 20px ;
+        margin-right: 10px ;
+    
+    }
+
+    img:hover{
+        filter: opacity(0.9);
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+
+    .redsocial{
+        position: fixed ;
+        right: 5px;
+        top: 25%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    
+    }
+
+    .portada{
+        width: 100% ;
+        height: 70px;
+        margin: auto;
+        background-image: url(img/Portada.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-bottom: 15px;
+        padding: 5px;
+        margin-left: 10px;
+        
+    
+    }
+
+    #contenedor-principal{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color:transparent;
+        position: fixed;
+        top: 25px;
+        left: 60px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        margin-left: 50px;
+        
+    }
+
+    #img-activa{
+        width: 55%;
+        height: auto;
+        margin-right: 400px;
+    }
+
+    #btn-cierra{
+        position: absolute;
+        top: 8%;
+        right: 48%;
+        font-size: 2rem;
+        cursor: pointer;
+        color: gray;
+    
+    }
+
+    #btn-retrocede{
+        position: absolute;
+        top: 40%;
+        left: 15px;
+        font-size: 2rem;
+        color: gray;
+    }
+
+    #btn-adelanta{
+        position: absolute;
+        top: 40%;
+        right: 47%;
+        font-size: 2rem;
+        color: gray;
+    }
+
+    .redsocial a:hover{
+        cursor: pointer;
+        padding-right: 3rem;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 0 .5rem rgb(0, 0, 0, 0.42);
+    
+    }
+
+    h3{
+        color:  white;
+        font-size: 1rem;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    
+}
